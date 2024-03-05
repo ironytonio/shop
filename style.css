@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: aliceblue;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+.header {
+  background-color: grey;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: left;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid black;
+}
+.navigation {
+  margin: 1vh 1rem;
+  font-size: 1.2rem;
+}
+a {
+  color: rgb(26, 26, 26);
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+}
+a:hover {
+  color: black;
+  font-size: 1.3rem;
+}
+main {
+  margin-top: 4.5vh;
+  display: flex;
+  width: 100vw;
+}
+.shops {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  min-width: 20vw;
+  height: 80vh;
+  padding: 0 1rem;
+  border: 1px solid black;
+  position: relative;
+}
+.shopsContainer {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+}
+.shopsBox {
+  list-style-type: none;
+}
+.shopsBox li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.productBox {
+  width: 70vw;
+  border: 1px solid black;
+  margin: auto;
+}
+.productContainer {
+  overflow-y: scroll;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.product {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product img {
+  max-width: 100%;
+}
+.product button {
+  margin: 2rem;
+}
