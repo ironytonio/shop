@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drug stores</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleCart.css" />
+  </head>
+  <body>
+    <form>
+      <header class="header">
+        <h3 class="navigation">
+          <a href="index.html">Shop</a>
+        </h3>
+        <h3 class="navigation">
+          <a href="indexCart.html">Shopping card</a>
+        </h3>
+      </header>
+      <main class="main">
+        <div class="formCart">
+          <div class="containerInput">
+            <p class="nameInput">Name</p>
+            <label for="userName">
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Name"
+                class="inputInformation"
+              />
+            </label>
+          </div>
+          <div class="containerInput">
+            <p class="nameInput">Email</p>
+            <label for="userEmail">
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                placeholder="@email..."
+                class="inputInformation"
+              />
+            </label>
+          </div>
+          <div class="containerInput">
+            <p class="nameInput">Telephone</p>
+            <label for="userTelephone">
+              <input
+                type="tel"
+                id="userTelephone"
+                name="userTelephone"
+                placeholder="0984774604"
+                class="inputInformation"
+              />
+            </label>
+          </div>
+          <div class="containerInput">
+            <p class="nameInput">Address</p>
+            <label for="userAddress">
+              <input
+                type="text"
+                id="userAddress"
+                name="userAddress"
+                placeholder="address"
+                class="inputInformation"
+              />
+            </label>
+          </div>
+        </div>
+        <section class="cartBox" id="cartBox"></section>
+      </main>
+      <footer class="footer">
+        <h2>Price: $</h2>
+        <h2 id="priceBox" class="priceBox"></h2>
+        <button type="submit" class="submit">Submit</button>
+      </footer>
+    </form>
+    <script src="scriptCart.js"></script>
+  </body>
+</html>
